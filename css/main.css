@@ -1,0 +1,36 @@
+main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 120px;
+}
+
+main > h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main > .riga > a > img{  
+    margin: 10px;
+    margin-left: 25px;
+}
+
+.Minecraft{
+    background-image: url(../img/Ultimi\ giochi/minecraft.jpg);
+}
+
+@media screen and (max-width: 768px){
+
+    main {
+        margin:20px;
+    }
+
+    main > h1{
+        font-size: 20px;
+    }
+
+    main > .riga > a > img{
+        height: 150px;
+    }
+
+}

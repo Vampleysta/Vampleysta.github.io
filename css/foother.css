@@ -1,0 +1,19 @@
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+footer > .Logo > img{
+    height: 400px;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+}
