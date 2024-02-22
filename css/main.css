@@ -19,7 +19,7 @@ main > .riga > a > img{
     background-image: url(../img/Ultimi\ giochi/minecraft.jpg);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 600px){
 
     main {
         margin:20px;

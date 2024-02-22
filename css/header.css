@@ -54,7 +54,7 @@ header>nav>.Desktop>a:hover {
     border-radius: 12px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
 
     header>nav>.Desktop {
         display: none;
