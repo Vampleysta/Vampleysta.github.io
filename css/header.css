@@ -7,7 +7,7 @@ li{
     color: transparent;
 }
 
-.Mobile {
+.headerMobile {
     display: none;
 }
 
@@ -25,7 +25,7 @@ header {
     border-radius: 20px;  
 }
 
-header>nav>.Desktop {
+header>nav>.headerDesktop {
 
     display: flex;
     flex-direction: row;
@@ -35,11 +35,11 @@ header>nav>.Desktop {
 
 }
 
-header>nav>.Desktop>.img>a>img {
+header>nav>.headerDesktop>.img>a>img {
     height: 180px;
 }
 
-header>nav>.Desktop>a {
+header>nav>.headerDesktop>a {
     color: white;
     text-decoration: none;
     font-size: 30px;
@@ -56,11 +56,11 @@ header>nav>.Desktop>a:hover {
 
 @media screen and (max-width: 600px) {
 
-    header>nav>.Desktop {
+    header>nav>.headerDesktop {
         display: none;
     }
 
-    header>nav>.Mobile {
+    header>nav>.headerMobile {
         display: block;
         display: flex;
         flex-direction: row;
@@ -68,11 +68,11 @@ header>nav>.Desktop>a:hover {
         align-items: center;
     }
 
-    header>nav>.Mobile>a>img {
+    header>nav>.headerMobile>a>img {
         height: 100px;
     }
 
-    header>nav>.Mobile>ul>li>label>img {
+    header>nav>.headerMobile>ul>li>label>img {
         height: 50px;
     }
 
