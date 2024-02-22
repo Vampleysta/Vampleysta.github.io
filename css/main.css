@@ -48,6 +48,7 @@ main > .mainDesktop > .riga > a > img{
 
     .mainMobile > .riga > a > img{
         height: 200px;
+        margin: 3px;
     }
 
 
