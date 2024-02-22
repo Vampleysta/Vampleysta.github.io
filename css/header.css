@@ -21,14 +21,15 @@ li{
 
 header {
     background-image: url(../img/background.webp);
-    background-size: 100%;  
+    background-size: 100%;
+    border-radius: 20px;  
 }
 
 header>nav>.Desktop {
 
     display: flex;
     flex-direction: row;
-    padding: 50px;
+    padding: 10px;
     justify-content: space-around;
     align-items: center;
 
