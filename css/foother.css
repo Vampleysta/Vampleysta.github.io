@@ -5,8 +5,22 @@ footer{
     background-color: #202020;
 }
 
-footer > .Logo > img{
-    height: 400px;
+footer > .firstfooter > .Logo > img{
+    height: 250px;
+    margin: 20px;
+}
+
+footer > .firstfooter{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+footer > .firstfooter > h1{
+    opacity: 0.3;
+    font-size: 15px;
+    padding-bottom: 20px;
 }
 
 .Logo{
@@ -17,4 +31,11 @@ footer > .Logo > img{
 .menu{
     display: flex;
     flex-direction: column;
+}
+
+.menu > a{
+    color: white;
+    text-decoration: none;
+    margin: 7px;
+    font-size: 20px;
 }
