@@ -25,6 +25,7 @@ footer  > h1{
 .menu{
     display: flex;
     flex-direction: row;
+    margin-right: 100px;
 }
 
 .menu > a{
@@ -64,6 +65,7 @@ footer  > h1{
         flex-direction: column;
         align-items: center;
         margin-top: 10px;
+        margin-right: 0px;
     }
 
 }
