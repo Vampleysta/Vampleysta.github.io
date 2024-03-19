@@ -25,28 +25,37 @@ main > .mainDesktop > .riga > a > img{
     margin: 10px;
 }
 
-main > .mainDesktop > .Minecraft{
+.Minecraft{
+
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
+    margin-top: 50px;
+
 }
 
-video{
-    height: 300px;
-    border-radius: 20px;
-    border: 1px solid white;
-    margin-right: 300px;
-}
+.Minecraft > .Minecraft1{
 
-.flexbox1{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 20px;
+
 }
 
-.flexbox1 > img{
+.Minecraft1 > video{
+
     height: 300px;
+
+}
+
+.Minecraft > .Minecraft1 > img{
+
+
+    height: 300px;
+    border-radius: 24px;
+
 }
 
 @media screen and (max-width: 600px){
