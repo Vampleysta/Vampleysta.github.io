@@ -1,3 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../img/Carousel/LPBIG.jpeg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    transition: 0.5;
+    margin-top: 50px;
+}
+
+.banner::before{
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.content{
+    position: relative;
+    max-width: 550px;
+    display: none;
+    visibility: hidden;
+    transform: scale(0);
+    transition: 0,5s;
+}
+
+.content.active{
+    display: block;
+    visibility: visible;
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.game.title{
+    max-width: 250px;
+}
+
+.banner .content h4{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.banner .content h4 span{
+    padding: 0 10px;
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.banner .content h4 span:first-child{
+    padding-left: 0;
+}
+
+.banner .content h4 span:last-child{
+    border-right: none;
+}
+
+.banner .content p{
+    font-size: 1em;
+    font-weight: 300;
+    line-height: 1.5em;
+    color: #ffffff;
+    margin: 10px 0 20px;
+}
+
+.banner .content .button{
+    position: relative;
+}
+
+.banner .content .button a{
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+    background-color: black;
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.banner .content .button a:nth-child(2){
+    background: rgba(0,0,0,0.5);
+    border: 1px solid rbga(255, 255, 255, 0,2);
+}
+
+.banner .content .button a:hover:nth-child(2){
+    background:black;
+    color: white;
+}
+
+.banner .carousel-box{
+    position: relative;
+    min-width: 950px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 20px 20px 50px rgb(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border-radius: 10px;
+    padding-top: 75px;
+}
+
+.carousel {
+    position: relative;
+    height: 550px;
+    perspective: 1500;
+}
+
+.carousel .carousel-item{
+    width: 250px;
+    cursor: pointer;
+}
+
+.carousel .carousel-item img{
+    max-width: 235px;
+    border-radius: 10px;
+    transform: translate(8px) translateY(-100px);
+    object-fit: cover;
+    object-position: center;
+}
+
 body {
     background-color: black;
     color: white;
@@ -20,13 +163,12 @@ li{
 }
 
 header {
-    background-image: url(../img/witcher-background.jpg);
     background-size: 100%;
     border-radius: 20px;  
 }
 
 header>nav>.headerDesktop {
-
+    background-color: black;
     display: flex;
     flex-direction: row;
     padding: 10px;
