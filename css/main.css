@@ -79,7 +79,22 @@ main > .mainDesktop > .riga > a > img{
         height: 200px;
         margin: 3px;
     }
-
+  form#search {
+      width: 230px;
+  }
+  fieldset legend {
+      display: none;
+  }
+  .buttonecerca{
+    border: solid 5px;
+    border-radius: 5px;
+  }
+  .barraricerca{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 10px;
+  }
 
 
 }

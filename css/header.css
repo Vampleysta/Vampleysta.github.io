@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+#sea-of-thives{
+    height: 300px;
+}
+
 .banner{
     position: relative;
     width: 100%;
@@ -216,12 +220,28 @@ header > nav > .headerDesktop > .Data{
 
 @media screen and (max-width: 600px) {
 
+    .banner{
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      margin-top: 10px;
+    }
+
+    .game-title{
+      height: 200px;
+    }
+
+    .carousel-box{
+      
+    }
+
     header>nav>.headerDesktop {
         display: none;
     }
 
     header>nav>.headerMobile {
         display: block;
+        background-color: black;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
